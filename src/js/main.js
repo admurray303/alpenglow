@@ -298,3 +298,22 @@ function initGallerySlideshow() {
   restartAutoSlide();
 }
 
+// Mobile menu toggle
+function initMobileMenu() {
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const header = document.querySelector('.site-header');
+  
+  if (toggle && header) {
+    toggle.addEventListener('click', () => {
+      header.classList.toggle('nav-open');
+    });
+  }
+}
+
+// Initialize mobile menu on load
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMobileMenu);
+} else {
+  initMobileMenu();
+}
+
