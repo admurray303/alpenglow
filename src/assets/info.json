@@ -24,7 +24,7 @@
     }
   },
   "service": {
-    "serviceArea": ["Breckenridge", "Frisco", "Dillon", "Keystone", "Silverthorne", "Blue River"],
+    "serviceArea": ["Breckenridge", "Frisco", "Dillon", "Keystone", "Silverthorne", "Blue River", "Summit Cove"],
     "hours": {
       "monday": "8:00 AM - 5:00 PM",
       "tuesday": "8:00 AM - 5:00 PM",
