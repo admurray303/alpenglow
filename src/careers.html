@@ -186,27 +186,27 @@
       </p>
 
       <div class="career-form-wrapper">
-        <form class="career-form">
+        <form name="career-application" netlify class="career-form">
         <div class="form-row">
           <label>
             Name
-            <input type="text" placeholder="Your full name" required />
+            <input type="text" name="name" placeholder="Your full name" required />
           </label>
 
           <label>
             Phone
-            <input type="tel" placeholder="Your phone number" required />
+            <input type="tel" name="phone" placeholder="Your phone number" required />
           </label>
         </div>
 
         <label>
           Email
-          <input type="email" placeholder="you@email.com" required />
+          <input type="email" name="email" placeholder="you@email.com" required />
         </label>
 
         <label>
           Position Interest
-          <select required>
+          <select name="position" required>
             <option value="">Select a position</option>
             <option value="apprentice">Apprentice Plumber</option>
             <option value="licensed">Licensed Plumber</option>
@@ -215,7 +215,7 @@
 
         <label>
           Experience Level
-          <select required>
+          <select name="experience" required>
             <option value="">Select experience level</option>
             <option value="none">No experience</option>
             <option value="entry">Entry level (less than 1 year)</option>
@@ -227,7 +227,7 @@
 
         <label>
           Why are you interested?
-          <textarea rows="4" placeholder="Tell us why you're interested in joining Alpenglow" required></textarea>
+          <textarea name="interest" rows="4" placeholder="Tell us why you're interested in joining Alpenglow" required></textarea>
         </label>
 
           <button type="submit" class="btn-primary btn-full-width">

@@ -161,34 +161,34 @@
         Fill out the form below and we'll get back to you as soon as possible.
       </p>
 
-      <form class="request-form">
+      <form name="services-service-request" netlify class="request-form">
         <div class="form-row">
           <label>
             Name
-            <input type="text" placeholder="Your full name" required />
+            <input type="text" name="name" placeholder="Your full name" required />
           </label>
 
           <label>
             Phone
-            <input type="tel" placeholder="Your phone number" required />
+            <input type="tel" name="phone" placeholder="Your phone number" required />
           </label>
         </div>
 
         <div class="form-row">
           <label>
             Email
-            <input type="email" placeholder="you@email.com" />
+            <input type="email" name="email" placeholder="you@email.com" />
           </label>
 
           <label>
             Town
-            <input type="text" placeholder="Breckenridge, Frisco, Dillon…" required />
+            <input type="text" name="town" placeholder="Breckenridge, Frisco, Dillon…" required />
           </label>
         </div>
 
         <label>
           Service Needed
-          <select required>
+          <select name="service" required>
             <option value="" disabled selected>Select a service</option>
             <option>Residential Plumbing</option>
             <option>Mechanical / Hydronic</option>
@@ -200,7 +200,7 @@
 
         <label>
           Message
-          <textarea rows="4" placeholder="Briefly describe the issue or request" required></textarea>
+          <textarea name="message" rows="4" placeholder="Briefly describe the issue or request" required></textarea>
         </label>
 
         <button type="submit" class="btn-primary">
