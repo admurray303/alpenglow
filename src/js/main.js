@@ -202,11 +202,11 @@ function initGallerySlideshow() {
   
   // Gallery images - using the images from the Gallery folder
   const galleryImages = [
-    'assets/images/Gallery/gallery-1.jpg',
-    'assets/images/Gallery/gallery-2.jpg',
-    'assets/images/Gallery/gallery-3.jpg',
-    'assets/images/Gallery/gallery-4.jpg',
-    'assets/images/Gallery/Gallery-5.jpg'
+    'assets/images/Gallery/gallery-1.png',
+    'assets/images/Gallery/gallery-2.png',
+    'assets/images/Gallery/gallery-3.png',
+    'assets/images/Gallery/gallery-4.png',
+    'assets/images/Gallery/gallery-5.png'
   ];
   
   let currentIndex = galleryImages.length; // Start in the middle set for seamless looping
