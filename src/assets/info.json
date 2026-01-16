@@ -1,0 +1,55 @@
+{
+  "business": {
+    "name": "Alpenglow Plumbing & Mechanical",
+    "legalName": "Alpenglow Plumbing & Mechanical, LLC",
+    "tagline": "Summit County, Colorado",
+    "description": "Local, owner-operated plumbing and mechanical services in Summit County, Colorado. Reliable service built for mountain homes."
+  },
+  "contact": {
+    "phone": {
+      "primary": "(970) 485-0009"
+    },
+    "email": {
+      "primary": "joseph.staed@gmail.com",
+      "general": "",
+      "support": ""
+    },
+    "address": {
+      "street": "PO Box 434",
+      "city": "Breckenridge",
+      "state": "CO",
+      "zipCode": "80424",
+      "county": "Summit County",
+      "fullAddress": "PO Box 434, Breckenridge, CO 80424"
+    }
+  },
+  "service": {
+    "serviceArea": ["Breckenridge", "Frisco", "Dillon", "Keystone", "Silverthorne", "Blue River"],
+    "hours": {
+      "monday": "8:00 AM - 5:00 PM",
+      "tuesday": "8:00 AM - 5:00 PM",
+      "wednesday": "8:00 AM - 5:00 PM",
+      "thursday": "8:00 AM - 5:00 PM",
+      "friday": "8:00 AM - 5:00 PM",
+      "saturday": "8:00 AM - 5:00 PM",
+      "sunday": "closed",
+      "emergency": "24/7"
+    },
+
+    "emergencyAvailable": false
+  },
+  "social": {
+    "website": "",
+    "facebook": "https://www.facebook.com/alpenglow.plumbing.and.mechanical",
+    "googleBusiness": "",
+    "yelp": ""
+  },
+  "businessDetails": {
+    "licenseNumber": "",
+    "insured": false,
+    "yearsInBusiness": "",
+    "owner": "Joseph Staed",
+    "founded": ""
+  }
+}
+
