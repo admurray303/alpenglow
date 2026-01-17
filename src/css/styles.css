@@ -2317,6 +2317,30 @@
     padding: 0 1rem;
   }
 
+  .gallery-section .container {
+    padding: 0 0.5rem;
+  }
+
+  .gallery-slideshow {
+    padding: 0;
+    gap: 0.5rem;
+  }
+
+  .gallery-viewport {
+    aspect-ratio: 4 / 3;
+    min-height: 320px;
+  }
+
+  .gallery-arrow {
+    width: 36px;
+    height: 36px;
+  }
+
+  .gallery-arrow svg {
+    width: 20px;
+    height: 20px;
+  }
+
   /* E) Footer layout */
   .footer-main {
     grid-template-columns: repeat(2, 1fr);
