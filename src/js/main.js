@@ -318,3 +318,41 @@ if (document.readyState === 'loading') {
   initMobileMenu();
 }
 
+// Enforce resume upload max size on careers form (client-side only).
+function initCareerResumeUploadLimit() {
+  const form = document.querySelector('form[name="career-application"]');
+  if (!form) return;
+
+  const fileInput = form.querySelector('input[type="file"][name="resume"]');
+  if (!fileInput) return;
+
+  const maxBytesAttr = fileInput.getAttribute('data-max-bytes');
+  const maxBytes = maxBytesAttr ? Number(maxBytesAttr) : 0;
+  if (!Number.isFinite(maxBytes) || maxBytes <= 0) return;
+
+  function enforceLimit() {
+    const file = fileInput.files && fileInput.files[0];
+    if (!file) return true;
+
+    if (file.size > maxBytes) {
+      const maxMb = Math.round((maxBytes / (1024 * 1024)) * 10) / 10;
+      alert(`Please choose a resume smaller than ${maxMb}MB.`);
+      fileInput.value = '';
+      fileInput.focus();
+      return false;
+    }
+    return true;
+  }
+
+  fileInput.addEventListener('change', enforceLimit);
+  form.addEventListener('submit', (e) => {
+    if (!enforceLimit()) e.preventDefault();
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCareerResumeUploadLimit);
+} else {
+  initCareerResumeUploadLimit();
+}
+

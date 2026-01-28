@@ -10,6 +10,43 @@
     content="Join Alpenglow Plumbing & Mechanical. Training, craftsmanship, and local work in Summit County, Colorado."
   />
 
+  <link rel="canonical" href="https://alpenglow-pm.com/careers.html" />
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["LocalBusiness", "Plumber"],
+      "@id": "https://alpenglow-pm.com/#business",
+      "name": "Alpenglow Plumbing & Mechanical",
+      "url": "https://alpenglow-pm.com/",
+      "telephone": "+1-970-485-0009",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "PO Box 434",
+        "addressLocality": "Breckenridge",
+        "addressRegion": "CO",
+        "postalCode": "80424",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        {
+          "@type": "AdministrativeArea",
+          "name": "Summit County, CO"
+        },
+        { "@type": "City", "name": "Breckenridge" },
+        { "@type": "City", "name": "Frisco" },
+        { "@type": "City", "name": "Dillon" },
+        { "@type": "City", "name": "Keystone" },
+        { "@type": "City", "name": "Copper" },
+        { "@type": "City", "name": "Silverthorne" },
+        { "@type": "City", "name": "Blue River" }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/alpenglow.plumbing.and.mechanical"
+      ]
+    }
+  </script>
+
   <!-- Icons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -205,7 +242,11 @@
       </p>
 
       <div class="career-form-wrapper">
-        <form name="career-application" netlify class="career-form">
+        <form name="career-application" method="POST" data-netlify="true" netlify-honeypot="bot-field" enctype="multipart/form-data" class="career-form">
+        <input type="hidden" name="form-name" value="career-application" />
+        <p style="display:none;">
+          <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+        </p>
         <div class="form-row">
           <label>
             Name
@@ -247,6 +288,12 @@
         <label>
           Why are you interested?
           <textarea name="interest" rows="4" placeholder="Tell us why you're interested in joining Alpenglow" required></textarea>
+        </label>
+
+        <label>
+          Resume (PDF or DOCX)
+          <input type="file" name="resume" data-max-bytes="10485760" accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document" />
+          <small class="form-hint">Max file size: 10MB</small>
         </label>
 
           <button type="submit" class="btn-primary btn-full-width">
